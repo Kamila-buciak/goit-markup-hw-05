@@ -27,6 +27,7 @@ a:hover {
 
 .icon-svg {
   fill: #afb1b8;
+  margin-right: 10px;
 }
 
 .header-container {
@@ -106,6 +107,8 @@ a:hover {
 }
 .contact-link:hover svg {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border {
@@ -280,6 +283,7 @@ a:hover {
 .our-icon:hover,
 .our-icon:focus {
   background-color: #2196f3;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -324,6 +328,7 @@ a:hover {
 .icon-logo:focus {
   fill: #2196f3;
   border: solid 1px #2196f3;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -490,6 +495,10 @@ a:hover {
   line-height: 1, 87;
 }
 
+.box-picture:hover .overlay,
+.picture:hover .overlay {
+  transform: translatex(0);
+}
 .box-picture {
   position: relative;
   width: 370px;
@@ -497,9 +506,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-}
-.box-picture:hover .overlay {
-  transform: translatex(0);
 }
 
 .overlay {
@@ -510,7 +516,7 @@ a:hover {
   height: 100%;
   background-color: #2196f3e5;
   transform: translatey(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms;
 }
 .overlay > p {
   color: #fff;
@@ -549,6 +555,10 @@ a:hover {
   height: 581px;
   background-color: #ffffff;
 }
+.svg-close:hover,
+.svg-close:focus {
+  fill: #2196f3;
+}
 .close-btn {
   position: absolute;
   top: 8px;
@@ -558,13 +568,13 @@ a:hover {
   right: 8px;
   top: 8px;
   border-radius: 50%;
+  padding: 6px;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 .close-btn:hover {
   border-color: #2196f3;
-  color: #2196f3;
 }
 .is-hidden {
   visibility: hidden;
