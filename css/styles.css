@@ -11,10 +11,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-a:focus,
-a:hover {
-  color: #2196f3;
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -62,8 +59,13 @@ a:hover {
   line-height: 1.14;
   padding-left: 46px;
   padding-top: 28px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
 }
 
 .header-logo {
@@ -74,8 +76,13 @@ a:hover {
   text-decoration: none;
   margin-left: 215px;
   margin-right: 93px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-logo:focus,
+.header-logo:hover {
+  color: #2196f3;
 }
 
 .contact {
@@ -86,6 +93,9 @@ a:hover {
 .contact-list {
   list-style: none;
   margin-right: 50px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list:hover,
@@ -102,13 +112,16 @@ a:hover {
   line-height: 16px;
   display: flex;
   text-align: center;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contact-link:hover {
+  color: #2196f3;
+}
 .contact-link:hover svg {
   fill: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
 }
 
 .border {
@@ -145,6 +158,7 @@ a:hover {
   padding: 10px 41px;
   margin-bottom: 210px;
   margin-left: 700px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -279,13 +293,14 @@ a:hover {
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-icon:hover,
 .our-icon:focus {
   background-color: #2196f3;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-icon {
   fill: #afb1b8;
@@ -323,14 +338,15 @@ a:hover {
   margin-bottom: 94px;
   padding: 10px;
   fill: #afb1b8;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-logo:hover,
 .icon-logo:focus {
   fill: #2196f3;
-  border: solid 1px #2196f3;
+  border: 1px solid #2196f3;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-footer-container {
@@ -384,6 +400,7 @@ a:hover {
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -396,6 +413,7 @@ a:hover {
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -437,8 +455,6 @@ a:hover {
   line-height: 26px;
   color: #212121;
   margin-right: 10px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-two {
@@ -446,6 +462,7 @@ a:hover {
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   border: solid 0px grey;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -475,6 +492,7 @@ a:hover {
   height: 404px;
   margin-right: 20px;
   cursor: pointer;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
